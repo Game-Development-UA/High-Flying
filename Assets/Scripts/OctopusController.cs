@@ -7,7 +7,7 @@ public class OctopusController : MonoBehaviour
     public float speed;
     float horizontal;
     float vertical;
-    public Rigidbody body;
+    public Rigidbody2D body;
 
     void Update()
     {
@@ -18,7 +18,7 @@ public class OctopusController : MonoBehaviour
 
     void FixedUpdate()
     {
-        body.AddForce(new Vector2(horizontal * speed, vertical * speed));
+      body.AddForce(new Vector2(horizontal * speed, vertical * speed));
     }
 }
 
