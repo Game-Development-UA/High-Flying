@@ -6,11 +6,14 @@ public class OctopusController : MonoBehaviour
 {
     public float speed;
     float horizontal;
+    float vertical;
     public Rigidbody body;
 
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+
     }
 
     void FixedUpdate()
