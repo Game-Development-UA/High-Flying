@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class LeftBirdMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform bird;
+    public float speed;
+
+    private void Start()
     {
-        
+        speed = Random.Range (1f,7f);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        bird.position += new Vector3(Time.deltaTime * speed, 0f, 0f);
     }
 }
