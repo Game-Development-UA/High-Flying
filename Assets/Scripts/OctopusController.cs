@@ -13,12 +13,13 @@ public class OctopusController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+        body.velocity=(new Vector2(horizontal * speed, vertical * speed));
 
     }
 
     void FixedUpdate()
     {
-      body.AddForce(new Vector2(horizontal * speed, vertical * speed));
+      //body.AddForce(new Vector2(horizontal * speed, vertical * speed));
     }
 }
 
