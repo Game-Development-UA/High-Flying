@@ -9,7 +9,7 @@ public class RightBirdMovement : MonoBehaviour
 
     private void Start()
     {
-        speed = Random.Range(1f, 7f);
+        speed = Random.Range(3f, 12f);
     }
 
     void Update()
