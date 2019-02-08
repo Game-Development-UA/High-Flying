@@ -22,12 +22,14 @@ public class AirplaneMovement : MonoBehaviour
         else
             transform.Translate(-Vector3.up * speed * Time.deltaTime);
 
-        if (transform.position.y > 1.0f)
+        //adjust y <,> values depending on Airplane's start position.
+
+        if (transform.position.y > 5.0f)
         {
             saw = false;
         }
 
-        if (transform.position.y <= -1.0f)
+        if (transform.position.y <= 4.0f)
         {
             saw = true;
         }
