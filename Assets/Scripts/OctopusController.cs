@@ -16,10 +16,5 @@ public class OctopusController : MonoBehaviour
         body.velocity=(new Vector2(horizontal * speed, vertical * speed));
 
     }
-
-    void FixedUpdate()
-    {
-      //body.AddForce(new Vector2(horizontal * speed, vertical * speed));
-    }
 }
 
