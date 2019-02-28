@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectBalloon : MonoBehaviour
+    //add to Octopus not Ballon
 
 { 
 public GameObject balloon;
 
 
 
-    void OnTriggerEnter2D(Collision2D collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-    balloon = collider.gameObject.GetComponent<balloon>;
-        if (balloon != null)
+        if (collider.gameObject.name == "Balloon")
         {
-        Destroy (balloon);
+        Destroy (this.gameObject);
         }
     }
 }
