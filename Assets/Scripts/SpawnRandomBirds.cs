@@ -25,5 +25,6 @@ public class SpawnRandomBirds : MonoBehaviour
 
             timer = 0;
         }
+
     }
 }
