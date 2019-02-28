@@ -12,9 +12,10 @@ public GameObject balloon;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name == "Balloon")
+        if (collider.gameObject.name == "Octopus")
         {
-        Destroy (this.gameObject);
+            this.transform.parent = collider.transform;
+            this.transform.localPosition = new Vector3(.5f, 1f, 0f);
         }
     }
 }
