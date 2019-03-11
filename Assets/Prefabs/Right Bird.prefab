@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4187139495876473549}
   - component: {fileID: 1439004290043665385}
   - component: {fileID: 7041563049123007352}
+  - component: {fileID: 7208004977578711989}
   m_Layer: 0
   m_Name: Right Bird
   m_TagString: Untagged
@@ -144,3 +145,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &7208004977578711989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286387411707598274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d8cda1ca08ee543a129eb63246df20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
