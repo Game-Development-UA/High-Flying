@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Balloon")
+        {
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.name == "Balloon(Clone)")
         {
             Destroy(collision.gameObject);
         }

@@ -9,13 +9,12 @@ public class CollectBalloon : MonoBehaviour
 public GameObject balloon;
 
 
-
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.name == "Octopus")
         {
             this.transform.parent = collider.transform;
-            this.transform.localPosition = new Vector3(.5f, 1f, 0f);
+            this.transform.localPosition = new Vector3(Random.Range(-.5f, .5f), Random.Range(.5f, 1.5f), 0f);
         }
     }
 }
