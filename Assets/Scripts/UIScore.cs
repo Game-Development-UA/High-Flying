@@ -1,13 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIScore : MonoBehaviour
 {
- /*   public int scoreH;
+    public float scoreH;
     public int scoreB;
-    public Text heightScore;
-    public Text balloonCount;
+    public TextMeshProUGUI heightScore;
+    public TextMeshProUGUI balloonCount;
+
+    public static UIScore singleton;
+
+    private void Awake()
+    {
+        singleton = this;
+    }
 
     private void Start()
     {
@@ -16,12 +24,18 @@ public class UIScore : MonoBehaviour
 
     void Update()
     {
-        scoreH = scoreH + OctopusSingleton.transform.position.y;
+        scoreH = scoreH + OctopusController.singleton.transform.position.y;
         SetScoreH();
     }
 
     void SetScoreH()
     {
-        heightScore.text;
-    } */
+        heightScore.text = ((int)scoreH).ToString();
+    }
+
+    public void SetScoreB(int amountToAdd)
+    {
+        scoreB = scoreB + amountToAdd;
+        balloonCount.text = scoreB.ToString();
+    }
 }

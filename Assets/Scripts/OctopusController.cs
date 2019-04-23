@@ -9,6 +9,13 @@ public class OctopusController : MonoBehaviour
     float vertical;
     public Rigidbody2D body;
 
+    public static OctopusController singleton;
+
+    private void Awake()
+    {
+        singleton = this;
+    }
+
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
