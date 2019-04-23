@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIScore : MonoBehaviour
 {
-    public int scoreH;
+ /*   public int scoreH;
     public int scoreB;
     public Text heightScore;
     public Text balloonCount;
@@ -22,6 +22,6 @@ public class UIScore : MonoBehaviour
 
     void SetScoreH()
     {
-        heightScore
-    }
+        heightScore.text;
+    } */
 }
