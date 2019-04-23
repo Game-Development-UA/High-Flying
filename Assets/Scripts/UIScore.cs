@@ -16,7 +16,7 @@ public class UIScore : MonoBehaviour
 
     void Update()
     {
-        scoreH = scoreH + y;
+        scoreH = scoreH + OctopusSingleton.transform.position.y;
         SetScoreH();
     }
 
