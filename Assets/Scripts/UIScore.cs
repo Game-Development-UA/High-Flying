@@ -38,4 +38,5 @@ public class UIScore : MonoBehaviour
         scoreB = scoreB + amountToAdd;
         balloonCount.text = scoreB.ToString();
     }
+
 }
