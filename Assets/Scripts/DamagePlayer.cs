@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class DamagePlayer : MonoBehaviour
 {
@@ -17,6 +19,12 @@ public class DamagePlayer : MonoBehaviour
         {
             Destroy(collision.gameObject);
             UIScore.singleton.SetScoreB(-1);
+        }
+
+        if (UIScore.singleton.scoreB == 0 )
+        {
+            SceneManager.LoadScene("Game Over");
+
         }
     }
 }
